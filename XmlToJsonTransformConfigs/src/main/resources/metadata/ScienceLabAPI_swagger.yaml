@@ -1,0 +1,34 @@
+openapi: 3.0.1
+info:
+  title: ApprovalService
+  description: API Definition of ScienceLabAPI
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/registrations
+paths:
+  /approve/{registrationId}:
+    post:
+      parameters:
+      - name: registrationId
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+        required: false
+      responses:
+        default:
+          description: Default response
+  /:
+    post:
+      responses:
+        default:
+          description: Default response
