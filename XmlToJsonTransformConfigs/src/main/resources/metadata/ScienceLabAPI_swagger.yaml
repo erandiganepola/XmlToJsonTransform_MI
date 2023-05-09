@@ -9,9 +9,9 @@ paths:
   /users:
     post:
       requestBody:
-        description: Sample Payload
+        description: Sample XML Payload
         content:
-          application/json:
+          application/xml:
             schema:
               type: object
               properties:
