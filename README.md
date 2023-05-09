@@ -6,7 +6,7 @@ MI project that does XML to JSOn transformation
 <user>
 	<name>Sam</name>
 	<job>Scientist</job>
-    <gender>Male</gender>
+	<gender>Male</gender>
 </user>
 ```
 
